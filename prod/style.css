@@ -1,0 +1,89 @@
+html {
+	font-family: montserrat, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	box-sizing: border-box;
+}
+
+body {
+	text-align:  center;
+	background-color: #177AB8;
+	color:  white;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+nav > div {
+	margin-top: 64px;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 32px;
+}
+
+nav > div > span {
+	font-weight: 500;
+}
+
+header {
+	font-family: montserrat-alternates, sans-serif;
+}
+
+section {
+	padding: 32px;
+	box-sizing: border-box; 
+}
+
+section > h2 {
+	font-family: montserrat-alternates, sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+section.column {
+	display: inline-block;
+	
+	min-width: 320px;
+	vertical-align: top;
+}
+
+section.column > ul {
+	list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+section.column > ul > li {
+	font-size: 32px;
+	margin-top: 16px;
+}
+
+form > * {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+form > label {
+	margin-bottom: 8px;
+}
+
+form > input, form > textarea {
+	margin-bottom: 16px;
+	padding: 8px;
+	box-sizing: border-box;
+	font-family: montserrat, sans-serif;
+}
+
+form > input[type="submit"] {
+	text-align: center;
+	font-weight: 600;
+	margin-top: 32px;
+	background-color: #EC008C;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	padding: 16px 0;
+}

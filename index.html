@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="prod/normalise.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="prod/style.css">
 
+	<link rel="stylesheet" href="https://use.typekit.net/fuu5qjo.css">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
@@ -26,16 +28,16 @@
 <body>
 
 	<nav>
-		<div>Globalhouse</div>
+		<div>Global<span>house</span></div>
 	</nav>
 
 	<header>
 		<h1>Quer arrendar ou vender o seu imóvel?</h1>
 	</header>
 
-	<section>
+	<section class="column">
 
-		<h2>Imobiliário</h2>
+		<h2>Serviços de imobiliário</h2>
 
 		<ul>
 			<li>Mediação imobiliária</li>
@@ -46,11 +48,11 @@
 			<li>Permuta de imóveis</li>
 		</ul>
 
-	</section>
+	</section><!--
 
-	<section>
+	--><section class="column">
 		
-		<h2>Contabilidade</h2>
+		<h2>Serviços de contabilidade</h2>
 
 		<ul>
 			<li>Agência de contribuintes</li>
@@ -76,7 +78,7 @@
 			<input id="email" type="email" name="email" required>
 
 			<label for="phone">Telefone (opcional)</label>
-			<input id="phone" type="phone" name="phone" required>
+			<input id="phone" type="phone" name="phone">
 
 			<label for="message">Mensagem</label>
 			<textarea id="message" name="message" required></textarea>
