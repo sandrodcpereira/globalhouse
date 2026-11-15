@@ -20,7 +20,9 @@
 
 	<!-- form start -->
 	<link rel="stylesheet" href="prod/pageclip.css" media="screen">
-	
+
+	<!-- reCAPTCHA v2 -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- form end -->
 
 	<meta property="og:title" content="Globalhouse">
@@ -110,16 +112,28 @@
 			<label for="message">Mensagem</label>
 			<textarea id="message" name="message" required></textarea>
 
-			<button class="button pageclip-form__submit" type="submit">
+			<!-- Substitua data-sitekey pela sua chave do reCAPTCHA (https://www.google.com/recaptcha/admin) -->
+			<div class="g-recaptcha" data-sitekey="6Lc5fyEuAAAAAAkk6pLA2A9wxZh1beFaz8tP54ep" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired"></div>
+
+			<button class="button pageclip-form__submit" type="submit" disabled>
     			<span>Enviar</span>
   			</button>
-			
+
 		</form>
 
-		<p>©2022 • Globalhouse</p>
+		<p>©2026 • Globalhouse</p>
 
 	</footer>
 
 	<script src="prod/pageclip.js" charset="utf-8"></script>
+	<script>
+		// Mantém o botão desativado até o reCAPTCHA ser resolvido.
+		function onCaptchaSuccess() {
+			document.querySelector('.pageclip-form__submit').removeAttribute('disabled');
+		}
+		function onCaptchaExpired() {
+			document.querySelector('.pageclip-form__submit').setAttribute('disabled', '');
+		}
+	</script>
 </body>
 </html>
